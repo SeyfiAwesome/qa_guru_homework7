@@ -48,7 +48,7 @@ def test_csv_from_zip(zip_with_files):
         with zip_file.open('users.csv') as _:
             content = _.read().decode()
             rows = list(csv.DictReader(content.splitlines(), delimiter=';'))
-    assert rows[1]['name'] == "Vlada"
+    assert rows[1]['name'] == "Seyfi"
 
 
 def test_xlsx_from_zip(zip_with_files):
